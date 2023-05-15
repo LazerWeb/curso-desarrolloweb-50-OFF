@@ -26,6 +26,10 @@ const hoursText = document.querySelector('.hours strong');
 const minutesText = document.querySelector('.minutes strong');
 const secondsText = document.querySelector('.seconds strong');
 
+const hoursHeaderText = document.querySelector('.hours-header strong');
+const minutesHeaderText = document.querySelector('.minutes-header strong');
+const secondsHeaderText = document.querySelector('.seconds-header strong');
+
 setInterval(() => {
     const todayDate = new Date();
     let hours = 23 - todayDate.getHours();
@@ -47,4 +51,8 @@ setInterval(() => {
     hoursText.textContent = hours;
     minutesText.textContent = minutes;
     secondsText.textContent = seconds;
+
+    hoursHeaderText.textContent = hours;
+    minutesHeaderText.textContent = minutes;
+    secondsHeaderText.textContent = seconds;
 }, 1000)
